@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-console.log("Hello World!");
-=======
 // function main() {
 //   function abc(result) {
 //     alert(result);
@@ -85,4 +82,3 @@ function main() {
 }
 
 document.addEventListener("DOMContentLoaded", main);
->>>>>>> 8a56d70 (Promise stop 1:40:00)
