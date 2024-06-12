@@ -1,4 +1,27 @@
-h1 {
-  background-color: royalblue;
-  color: white;
+/* h1 {
+  text-align: center;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 2px, solid black;
+}
+ */
+
+.red {
+  color: aliceblue;
+  background-color: red;
+}
+
+.primary {
+  color: aliceblue;
+  background-color: blue;
+}
+
+body {
+  width: 10vw;
+  text-align: center;
+  margin: 0 auto;
 }
