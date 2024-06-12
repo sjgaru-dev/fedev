@@ -1,66 +1,30 @@
-// 1 //
-console.log("Start");
+function main() {
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function app() {
-  const btnSave = document.querySelector("#btnSave");
-  const message = document.querySelector(".message");
+  // function makeLi(list) {
+  //   const output = [];
+  //   let i = 0;
+  //   while (i < list.length) {
+  //     output.push(`<li>${list[i]}</li>`);
+  //     i++;
+  //   }
 
-  function onSave() {
-    console.log("clicked!");
-    message.innerText = "SAVED!";
-    setTimeout(() => {
-      message.innerText = "";
-    }, 1000);
-  }
+  //   for (i = 0; i < list.length; i++) {
+  //     output.push(`<li>${list[i]}</li>`);
+  //   }
+  //   return output;
+  // }
+  // const result = makeLi(numbers);
 
-  btnSave.addEventListener("click", onSave);
+  // function makeP(list) {
+  //   return list.map((item) => `<p>${item}</p>`);
+  // }
+
+  const makeP = (list) => list.map((item) => `<p>${item}</p>`);
+
+  console.log(makeP(numbers));
+
+  // console.log(result);
 }
 
-document.addEventListener("DOMContentLoaded", app);
-
-// 2 //
-
-function Person(name, age) {
-  this.name = name;
-  this.age = age;
-  this.getName = () => this.name;
-}
-
-class Man {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-}
-
-const p = new Person("John", 30);
-console.log(p);
-console.log(p.getName());
-
-const p1 = new Man("abc", 24);
-console.log(p1);
-
-// 3 //
-
-function myKey() {
-  let a = 10;
-  function add10() {
-    a += 10;
-    return a;
-  }
-  function min10() {
-    a -= 10;
-    return a;
-  }
-
-  return {
-    add10: add10,
-    min10: min10,
-  };
-}
-
-const key = myKey();
-console.log(key.min10());
-console.log(key.add10());
-console.log(key.add10());
-console.log(key.min10());
+document.addEventListener("DOMContentLoaded", main);
